@@ -29,7 +29,7 @@ Challenge: Extreme imbalance — typically <0.2% of transactions are fraudulent
 
 The project is organized into four primary notebooks:
 
-1. Data_Preparation.ipynb — Flat File Creation
+### 1. Data_Preparation.ipynb — Flat File Creation
 
 Purpose: Assemble a unified, analysis-ready dataset from raw fragments.
 Main actions:
@@ -47,7 +47,7 @@ Save the final clean flat file (credit_card_flat.csv)
 Motivation: Ensures consistency and reproducibility for downstream analysis.
 Challenges: Inconsistent schemas and missing identifiers required careful validation.
 
-2. Data_Cleansing.ipynb
+### 2. Data_Cleansing.ipynb
 
 Purpose: Clean and verify dataset integrity.
 Main actions:
@@ -63,7 +63,7 @@ Confirm logical consistency (e.g., transaction time and amount)
 Motivation: Reliable models require high-quality input data.
 Challenges: Careful validation was needed to avoid removing legitimate transactions that resemble fraud.
 
-3. EDA.ipynb — Exploratory Data Analysis
+### 3. EDA.ipynb — Exploratory Data Analysis
 
 Purpose: Explore and visualize trends, correlations, and potential fraud predictors.
 Main actions:
@@ -86,7 +86,7 @@ Extreme class imbalance requires special evaluation metrics
 
 Challenges: Rare fraud events required log-scaling and careful sampling to avoid misleading patterns.
 
-4. Eng_Selc_Eval.ipynb — Feature Engineering, Selection & Modeling
+### 4. Eng_Selc_Eval.ipynb — Feature Engineering, Selection & Modeling
 
 Purpose: Engineer features, train models, and evaluate performance.
 Main actions:
@@ -107,7 +107,8 @@ Important features: V4, V12, V17
 
 Logistic Regression provided baseline interpretability
 
-## Challenges: Severe class imbalance required focusing on recall and ROC-AUC rather than raw accuracy. Ensemble models required careful hyperparameter tuning.
+## Challenges:
+Severe class imbalance required focusing on recall and ROC-AUC rather than raw accuracy. Ensemble models required careful hyperparameter tuning.
 
 ## Methodology Summary
 Step	Description	Key Libraries
