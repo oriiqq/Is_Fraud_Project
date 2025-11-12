@@ -1,5 +1,5 @@
-Credit Card Fraud Detection
-Overview
+# Credit Card Fraud Detection
+## Overview
 
 This project focuses on detecting credit card fraud using machine learning, following a systematic data science workflow:
 
@@ -7,17 +7,17 @@ Flat File Creation → Data Cleansing → Exploratory Data Analysis (EDA) → Fe
 
 The goal is to identify fraudulent transactions with high precision and interpretability while maintaining both academic rigor and practical relevance.
 
-Motivation
+## Motivation
 
 Credit card fraud is a critical challenge for global financial systems. Fraudulent transactions are rare compared to legitimate ones, making it difficult for standard classification algorithms to detect them effectively.
 
 This project is motivated by the need for a transparent, reproducible workflow to analyze, prepare, and model credit card transaction data. Emphasis is placed on handling class imbalance, ensuring interpretability, and maintaining data quality.
 
-Dataset
+## Dataset
 
 The dataset consists of anonymized credit card transactions. Each row represents a single transaction labeled as legitimate (0) or fraudulent (1). Features are numeric and include PCA-transformed components, transaction amount, and time.
 
-Key points:
+## Key points:
 
 Features: 30 numerical attributes (V1–V28, plus Amount and Time)
 
@@ -25,7 +25,7 @@ Target: Binary fraud indicator (0 or 1)
 
 Challenge: Extreme imbalance — typically <0.2% of transactions are fraudulent
 
-Project Workflow
+## Project Workflow
 
 The project is organized into four primary notebooks:
 
@@ -107,9 +107,9 @@ Important features: V4, V12, V17
 
 Logistic Regression provided baseline interpretability
 
-Challenges: Severe class imbalance required focusing on recall and ROC-AUC rather than raw accuracy. Ensemble models required careful hyperparameter tuning.
+## Challenges: Severe class imbalance required focusing on recall and ROC-AUC rather than raw accuracy. Ensemble models required careful hyperparameter tuning.
 
-Methodology Summary
+## Methodology Summary
 Step	Description	Key Libraries
 Data Preparation	Combine and clean raw sources into one dataset	pandas, numpy
 Data Cleansing	Remove inconsistencies and verify integrity	pandas, numpy
